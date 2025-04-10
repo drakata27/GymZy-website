@@ -9,9 +9,9 @@ const Hero = () => {
       <h1 className="font-bold text-4xl p-3 text-blue-800">GymZy</h1>
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-6">
         <img
-          src="/src/public/images/hero/journal.png"
+          src="/images/hero/journal.png"
           alt="Journal Screen"
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 xl:w-1/3 2xl:w-1/4"
         />
 
         <div className="space-y-3 md:w-1/2 text-center md:text-left">
@@ -26,7 +26,7 @@ const Hero = () => {
           </Button>
 
           {/* <img
-            src="/src/public/images/hero/appstore-dark.png"
+            src="/images/hero/appstore-dark.png"
             alt="Download on the App Store"
             className="w-40 mx-auto md:mx-0"
           /> */}

@@ -28,8 +28,8 @@ const Footer = () => {
 
           <div className="flex-col justify-items-end">
             <img
-              src="/src/public/images/contact/appstore-light.svg"
-              alt="GymZy logo"
+              src="/images/contact/appstore-light.svg"
+              alt="App Store Badge"
               className="w-50"
             />
           </div>
