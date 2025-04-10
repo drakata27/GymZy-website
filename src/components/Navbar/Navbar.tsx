@@ -31,8 +31,7 @@ const Navbar = () => {
       <nav className="flex justify-between items-center">
         {/* Logo */}
         <Link className="hover-animation-2" to="/">
-          {/* <span className="text-xl font-bold ">GymZy</span> */}
-          <img src="/src/public/gymzy.png" alt="GymZy logo" className="w-16" />
+          <img src="/gymzy.png" alt="GymZy logo" className="w-16" />
         </Link>
 
         {/* Desktop Menu */}
