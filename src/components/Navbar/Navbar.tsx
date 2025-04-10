@@ -24,14 +24,15 @@ const Navbar = () => {
 
   return (
     <header
-      className={`mb-5 px-5 py-3 sticky top-0 w-full z-10 transition-all ${
-        scrolled ? "bg-opacity-20" : "bg-transparent bg-opacity-20"
+      className={`mb-5 px-5 py-3 sticky top-0 w-full z-10 transition-all  ${
+        scrolled ? "bg-opacity-20" : "bg-blue-300 bg-opacity-20"
       } backdrop-blur-lg`}
     >
       <nav className="flex justify-between items-center">
         {/* Logo */}
-        <Link className="hover-animation-2" to="#home">
-          <span className="text-xl font-bold ">GymZy</span>
+        <Link className="hover-animation-2" to="/">
+          {/* <span className="text-xl font-bold ">GymZy</span> */}
+          <img src="/src/public/gymzy.png" alt="GymZy logo" className="w-16" />
         </Link>
 
         {/* Desktop Menu */}

@@ -3,12 +3,17 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Home />}>
+          <Route index element={<Home />} />
+        </Route>
+
         <Route path="/privacy-policy" element={<PrivacyPolicy />}>
           <Route index element={<PrivacyPolicy />} />
         </Route>
