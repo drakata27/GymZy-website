@@ -10,13 +10,8 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}>
-          <Route index element={<Home />} />
-        </Route>
-
-        <Route path="/privacy-policy" element={<PrivacyPolicy />}>
-          <Route index element={<PrivacyPolicy />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
     </div>
