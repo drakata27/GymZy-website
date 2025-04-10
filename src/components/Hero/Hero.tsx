@@ -1,4 +1,9 @@
+import { Button } from "../ui/button";
+
 const Hero = () => {
+  const joinBetaTest = () => {
+    window.open("https://testflight.apple.com/join/S9Rx1XtM", "_blank");
+  };
   return (
     <div className="p-3 space-x-1">
       <h1 className="font-bold text-4xl p-3 text-blue-800">GymZy</h1>
@@ -15,11 +20,16 @@ const Hero = () => {
             Your ultimate workout companion — log sets, stay consistent, and get
             stronger with GymZy.
           </p>
-          <img
+
+          <Button className="hover:cursor-pointer" onClick={joinBetaTest}>
+            Join Beta Testing
+          </Button>
+
+          {/* <img
             src="/src/public/images/hero/appstore-dark.png"
             alt="Download on the App Store"
             className="w-40 mx-auto md:mx-0"
-          />
+          /> */}
         </div>
       </div>
     </div>

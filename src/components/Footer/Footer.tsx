@@ -28,11 +28,6 @@ const Footer = () => {
 
           <div className="flex-col justify-items-end">
             <img
-              src="/src/public/gymzy.png"
-              alt="GymZy logo"
-              className="w-16"
-            />
-            <img
               src="/src/public/images/contact/appstore-light.svg"
               alt="GymZy logo"
               className="w-50"
