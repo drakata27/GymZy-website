@@ -21,8 +21,11 @@ const Hero = () => {
             stronger with GymZy.
           </p>
 
-          <Button className="hover:cursor-pointer" onClick={joinBetaTest}>
-            Join Beta Testing
+          <Button
+            className="hover:cursor-pointer hover:bg-blue-400  bg-blue-500 rounded-3xl"
+            onClick={joinBetaTest}
+          >
+            Get Beta
           </Button>
 
           {/* <img
