@@ -28,7 +28,7 @@ Because GymZy stores your data locally and does not transmit it, your health and
 
 ## 6. Children’s Privacy
 
-GymZy is not intended for children under the age of 13. We do not knowingly collect any data from children.
+GymZy is not intended for children under the age of 4. We do not knowingly collect any data from children.
 
 ## 7. Changes to This Policy
 
