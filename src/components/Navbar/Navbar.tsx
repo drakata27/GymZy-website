@@ -25,8 +25,8 @@ const Navbar = () => {
   return (
     <header
       className={`mb-5 px-5 py-3 sticky top-0 w-full z-10 transition-all  ${
-        scrolled ? "bg-opacity-20" : "bg-blue-300 bg-opacity-20"
-      } backdrop-blur-lg`}
+        scrolled ? "bg-opacity-20 " : "bg-blue-300 bg-opacity-20"
+      }  backdrop-blur-lg`}
     >
       <nav className="flex justify-between items-center">
         {/* Logo */}

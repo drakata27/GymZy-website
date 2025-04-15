@@ -1,3 +1,4 @@
+import { Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -32,6 +33,12 @@ const Footer = () => {
               alt="App Store Badge"
               className="w-50"
             />
+            <Link to="https://www.instagram.com/gym.zy/" target="blank">
+              <div className="flex space-x-3">
+                <p>Follow us on Instagram</p>
+                <Instagram className="font-white" />
+              </div>
+            </Link>
           </div>
         </div>
 
