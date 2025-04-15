@@ -1,9 +1,6 @@
-import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const joinBetaTest = () => {
-    window.open("https://testflight.apple.com/join/S9Rx1XtM", "_blank");
-  };
   return (
     <div className="p-3 space-x-1">
       <h1 className="font-bold text-4xl p-3 text-blue-800">GymZy</h1>
@@ -21,18 +18,16 @@ const Hero = () => {
             stronger with GymZy.
           </p>
 
-          <Button
-            className="hover:cursor-pointer hover:bg-blue-400  bg-blue-500 rounded-3xl"
-            onClick={joinBetaTest}
+          <Link
+            to="https://apps.apple.com/gb/app/gymzy-workout-tracker-notes/id6744414533"
+            target="blank"
           >
-            Get Beta
-          </Button>
-
-          {/* <img
-            src="/images/hero/appstore-dark.png"
-            alt="Download on the App Store"
-            className="w-40 mx-auto md:mx-0"
-          /> */}
+            <img
+              src="/images/hero/appstore-dark.png"
+              alt="Download on the App Store"
+              className="w-40 mx-auto md:mx-0"
+            />
+          </Link>
         </div>
       </div>
     </div>

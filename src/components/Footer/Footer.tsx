@@ -27,12 +27,18 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex-col justify-items-end">
-            <img
-              src="/images/contact/appstore-light.svg"
-              alt="App Store Badge"
-              className="w-50"
-            />
+          <div className="flex-col justify-items-end space-x-5">
+            <Link
+              to="https://apps.apple.com/gb/app/gymzy-workout-tracker-notes/id6744414533"
+              target="blank"
+            >
+              <img
+                src="/images/hero/appstore-dark.png"
+                alt="Download on the App Store"
+                className="w-40 mx-auto md:mx-0"
+              />
+            </Link>
+
             <Link to="https://www.instagram.com/gym.zy/" target="blank">
               <div className="flex space-x-3">
                 <p>Follow us on Instagram</p>

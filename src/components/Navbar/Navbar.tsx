@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { Menu } from "lucide-react";
+import { Button } from "../ui/button";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,6 +23,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const downloadApp = () => {
+    window.open(
+      "https://apps.apple.com/gb/app/gymzy-workout-tracker-notes/id6744414533",
+      "_blank"
+    );
+  };
+
   return (
     <header
       className={`mb-5 px-5 py-3 sticky top-0 w-full z-10 transition-all  ${
@@ -38,6 +46,13 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4">
           <Link to="/">Home</Link>
           <Link to="/privacy-policy">Privacy Policy</Link>
+
+          <Button
+            className="hover:cursor-pointer hover:bg-blue-400  bg-blue-500 rounded-3xl"
+            onClick={downloadApp}
+          >
+            Get
+          </Button>
         </div>
 
         {/* Hamburger Menu */}
@@ -55,6 +70,12 @@ const Navbar = () => {
         <div className="md:hidden flex flex-col items-center gap-2 mt-3  p-4 rounded shadow">
           <Link to="/">Home</Link>
           <Link to="/privacy-policy">Privacy Policy</Link>
+          <Button
+            className="hover:cursor-pointer hover:bg-blue-400  bg-blue-500 rounded-3xl"
+            onClick={downloadApp}
+          >
+            Get
+          </Button>
         </div>
       )}
     </header>
